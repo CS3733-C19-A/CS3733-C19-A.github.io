@@ -1,248 +1,484 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Team A: TTB User Manual</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Team A: TTB User Manual</title>
 
-<style type="text/css">
+  <style type="text/css">
+    @import url("../../../../Downloads/bootstrap-material-design-dist/css/bootstrap-material-design.css");
 
-@import url("../../../../Downloads/bootstrap-material-design-dist/css/bootstrap-material-design.css");
+    body {
+      position: relative;
+    }
 
-body{
-  position:relative;
-}
+    h4 {
+      font-size: 22px;
+    }
 
-h4 {
-	font-size: 22px;
-}
-h5 {
-	font-size: 18.5px;
-}
+    h5 {
+      font-size: 18.5px;
+    }
 
-.navbar {
-  background-color: #046b99;
-}
-.navbar .navbar-brand {
-  color: #f8f8f8;
-}
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-  color: #ffffff;
-}
-.navbar .navbar-text {
-  color: #f8f8f8;
-}
-.navbar .navbar-text a {
-  color: #ffffff;
-}
-.navbar .navbar-text a:hover,
-.navbar .navbar-text a:focus {
-  color: #ffffff; 
-}
-.navbar .navbar-nav .nav-link {
-  color: #f8f8f8;
-  border-radius: .25rem;
-  margin: 0 0.25em;
-}
-.navbar .navbar-nav .nav-link:not(.disabled):hover,
-.navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #ffffff;
-}
-.navbar .navbar-nav .nav-item.active .nav-link,
-.navbar .navbar-nav .nav-item.active .nav-link:hover,
-.navbar .navbar-nav .nav-item.active .nav-link:focus,
-.navbar .navbar-nav .nav-item.show .nav-link,
-.navbar .navbar-nav .nav-item.show .nav-link:hover,
-.navbar .navbar-nav .nav-item.show .nav-link:focus {
-  color: #ffffff;
-  background-color: #112e51;
-}
-.navbar .navbar-toggle {
-  border-color: #112e51;
-}
-.navbar .navbar-toggle:hover,
-.navbar .navbar-toggle:focus {
-  background-color: #112e51;
-}
-.navbar .navbar-toggle .navbar-toggler-icon {
-  color: #f8f8f8;
-}
-.navbar .navbar-collapse,
-.navbar .navbar-form {
-  border-color: #f8f8f8;
-}
-.navbar .navbar-link {
-  color: #f8f8f8;
-}
-.navbar .navbar-link:hover {
-  color: #ffffff;
-}
+    .navbar {
+      background-color: #112e51;
+    }
+
+    .navbar .navbar-brand {
+      color: #f8f8f8;
+    }
+
+    .navbar .navbar-brand:hover,
+    .navbar .navbar-brand:focus {
+      color: #ffffff;
+    }
+
+    .navbar .navbar-text {
+      color: #f8f8f8;
+    }
+
+    .navbar .navbar-text a {
+      color: #ffffff;
+    }
+
+    .navbar .navbar-text a:hover,
+    .navbar .navbar-text a:focus {
+      color: #ffffff;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      color: #f8f8f8;
+      border-radius: .25rem;
+      margin: 0 0.25em;
+    }
+
+    .navbar .navbar-nav .nav-link:not(.disabled):hover,
+    .navbar .navbar-nav .nav-link:not(.disabled):focus {
+      color: #ffffff;
+    }
+
+    .navbar .navbar-nav .nav-item.active .nav-link,
+    .navbar .navbar-nav .nav-item.active .nav-link:hover,
+    .navbar .navbar-nav .nav-item.active .nav-link:focus,
+    .navbar .navbar-nav .nav-item.show .nav-link,
+    .navbar .navbar-nav .nav-item.show .nav-link:hover,
+    .navbar .navbar-nav .nav-item.show .nav-link:focus {
+      color: #ffffff;
+      background-color: #112e51;
+    }
+
+    .navbar .navbar-toggle {
+      border-color: #112e51;
+    }
+
+    .navbar .navbar-toggle:hover,
+    .navbar .navbar-toggle:focus {
+      background-color: #112e51;
+    }
+
+    .navbar .navbar-toggle .navbar-toggler-icon {
+      color: #f8f8f8;
+    }
+
+    .navbar .navbar-collapse,
+    .navbar .navbar-form {
+      border-color: #f8f8f8;
+    }
+
+    .navbar .navbar-link {
+      color: #f8f8f8;
+    }
+
+    .navbar .navbar-link:hover {
+      color: #ffffff;
+    }
 
 
-.col-4 {
-  position: fixed;
-  height: 100%;
-  background-color: #046b99;
-  color: #ffffff;
-  overflow-y: scroll;
-}
+    .col-2 {
+      position: fixed;
+      height: 100%;
+      background-color: #112e51;
+      color: #ffffff;
+      overflow-y: scroll;
+    }
 
-.col-8 {
-  position: static;
-  height: 100%;
-  background-color: #f8f8f8;
-  color: #000000;
-  margin-left: auto;
-}
+    .col-10 {
+      position: static;
+      height: 100%;
+      background-color: #f8f8f8;
+      color: #000000;
+      margin-left: auto;
+    }
 
-.list-group-item-action {
-    width: 100%;
-    color: #ffffff;
-    text-align: inherit;
-}
+    .list-group-item-action {
+      width: 100%;
+      color: #ffffff;
+      text-align: inherit;
+    }
 
-</style>
+  </style>
 </head>
+
 <body data-spy="scroll" data-target=".col-4" data-offset="10">
-          <div class="row">
-            <div class="col-4">
-              <nav class="navbar">
-                <div id="list-example" class="list-group">
-                <a class="navbar-brand" href="https://www.facebook.com/groups/2089159384680424/">TTB COLA Search</a>
-                  <ul>
-                    <a class="list-group-item list-group-item-action" href="#oview">Overview</a>
-                    <a class="list-group-item list-group-item-action" href="#home">Home Page</a>
-                    <a class="list-group-item list-group-item-action" href="#nbar">Navigation Bar</a>
-                    <a class="list-group-item list-group-item-action" href="#cola">COLA Search</a>
-                    <a class="list-group-item list-group-item-action" href="#creacct">Create Account</a>
-                    <a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a>
-                    <a class="list-group-item list-group-item-action" href="#login">Login Page</a>
-                    <a class="list-group-item list-group-item-action" href="#portal">User Portal</a>
-                    <ul>
-                      <a class="list-group-item list-group-item-action" href="#agent">Agent</a>
-                      <a class="list-group-item list-group-item-action" href="#man">Manufacturer</a>
-                    </ul>
-                    <a class="list-group-item list-group-item-action" href="#forms">Forms</a>
-                    <ul>
-                        <a class="list-group-item list-group-item-action" href="#submit">Submitting</a>
-                        <a class="list-group-item list-group-item-action" href="#approve">Approving</a>
-                    </ul>
-                    <a class="list-group-item list-group-item-action" href="#help">Help Pages</a>
-                    <a class="list-group-item list-group-item-action" href="#about">About Page</a>
-                    <a class="list-group-item list-group-item-action" href="#other">Other</a>
-                    <ul>
-                        <a class="list-group-item list-group-item-action" href="#gamif">Gamification</a>
-                        <a class="list-group-item list-group-item-action" href="#vasst">Voice Assistant</a>
-                        <a class="list-group-item list-group-item-action" href="#email">Email Notifications</a>
-                    </ul>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <div class="col-8">     
-              <div>
-              
-                <h4 id="oview">Overview</h4>
-                <p>
-                
-                </p>
-                
-                <h4 id="home">Home Page</h4>
-                <p>
+  <div class="row">
+    <div class="col-2">
+      <nav class="navbar">
+        <div id="list-example" class="list-group">
+          <h2 style="text-align: center"> User Directory </h2>
+          <ul>
+            <a class="list-group-item list-group-item-action" href="#oview">Overview</a>
+            <a class="list-group-item list-group-item-action" href="#home">Home Page</a>
+            <a class="list-group-item list-group-item-action" href="#nbar">Navigation Bar</a>
+            <a class="list-group-item list-group-item-action" href="#cola">COLA Search</a>
+            <a class="list-group-item list-group-item-action" href="#creacct">Create Account</a>
+            <a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a>
+            <a class="list-group-item list-group-item-action" href="#login">Login Page</a>
+            <a class="list-group-item list-group-item-action" href="#portal">User Portal</a>
+            <ul>
+              <a class="list-group-item list-group-item-action" href="#agent">Agent</a>
+              <a class="list-group-item list-group-item-action" href="#man">Manufacturer</a>
+            </ul>
+            <a class="list-group-item list-group-item-action" href="#forms">Forms</a>
+            <ul>
+              <a class="list-group-item list-group-item-action" href="#submit">Submitting</a>
+              <a class="list-group-item list-group-item-action" href="#approve">Approving</a>
+            </ul>
+            <a class="list-group-item list-group-item-action" href="#help">Help Pages</a>
+            <a class="list-group-item list-group-item-action" href="#about">About Page</a>
+            <a class="list-group-item list-group-item-action" href="#other">Other</a>
+            <ul>
+              <a class="list-group-item list-group-item-action" href="#gamif">Gamification</a>
+              <a class="list-group-item list-group-item-action" href="#vasst">Voice Assistant</a>
+              <a class="list-group-item list-group-item-action" href="#email">Email Notifications</a>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-10" style="padding-right: 50px; padding-left: 20px">
+      <div>
+        <h5 style="margin-bottom: -8px; margin-top: 50px; font-size: 30px; color: #046b99;">Alcohol and Tobacco Tax and Trade Bureau</h5>
+        <h1 style="font-size: 80px; background-color: #046b99; color: white;padding-left: 10px; margin-left: -2px">COLA System User Manual</h1>
+        <h5 style="margin-top: -5px; color: #6b6868">Max Westwater, Jonathan Dang, Shuxing Li, Christopher Bell, Jonathan Tai, James Witt, Dillon Arnold, Junyu Lyu, Alex Rus, Zhihao Xie</h5>
+        <h4 id="oview" style="margin-top: 88px;">Overview</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+          venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus gravida
+          scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare. Mauris rhoncus,
+          felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum iaculis ultrices sem,
+          in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere ex. Aliquam erat volutpat.
+          Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et mattis massa rhoncus id. Aliquam
+          id est fermentum metus semper aliquam non eget neque. Integer varius aliquet placerat. Duis semper cursus neque
+          sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis sapien, ultricies ut dolor semper,
+          pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis. Nulla rhoncus volutpat neque, sed interdum
+          lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus a tellus. Vestibulum laoreet, ante nec varius
+          euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac justo.
+        </p>
 
-                </p>
-                
-                <h4 id="nbar">Navigation Bar</h4>
-                <p>
-        
-                </p>
-                
-                <h4 id="cola">COLA Search</h4>
-                <p>
-          
-                </p>
-                
-                <h4 id="creacct">Create Account</h4>
-                <p>
-        
-                
-                </p>
-                
-                <h4 id="twofact">Setup Two Factor Authorization Page</h4>
-                <p>
-                
-                </p>
-                
-                <h4 id="login">Login Page</h4>
-                <p>
-                
-                </p>
-                
-                <h4 id="portal">User Portal</h4>
-                <p>
-                
-                </p>
-                
-                <h5 id="agent">Agent</h5>
-                <p>
-                
-                </p>
-                
-                <h5 id="man">Manufacturer</h5>
-                <p>
-                
-                </p>
-                
-                <h4 id="forms">Forms</h4>
-                <p>
-                
-                </p>
-                
-                <h5 id="submit">Submitting</h5>
-                <p>
-                
-                </p>
-                
-                <h5 id="approve">Approving</h5>
-                <p>
-                
-                </p>
-                
-                <h4 id="help">Help Pages</h4>
-                <p>
-                
-                </p>
-                
-                <h4 id="about">About Page</h4>
-                <p>
-                
-                </p>
-                
-                <h4 id="other">Other</h4>
-                <p>
-                
-                </p>
-                
-                <h5 id="gamif">Gamification</h4>
-                <p>
-                
-                </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+            venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus gravida
+            scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare. Mauris rhoncus,
+            felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum iaculis ultrices sem,
+            in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere ex. Aliquam erat volutpat.
+            Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et mattis massa rhoncus id. Aliquam
+            id est fermentum metus semper aliquam non eget neque. Integer varius aliquet placerat. Duis semper cursus neque
+            sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis sapien, ultricies ut dolor semper,
+            pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis. Nulla rhoncus volutpat neque, sed interdum
+            lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus a tellus. Vestibulum laoreet, ante nec varius
+            euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac justo.
+          </p>
 
-                <h5 id="vasst">Voice Assistant</h4>
-                <p>
-                
-                </p>
+          <hr>
 
-                <h5 id="email">Email Notifications</h4>
-                <p>
-                
-                </p>
-
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-8">
+            <h4 id="home">Home Page</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
           </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="nbar">Navigation Bar</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="cola">COLA Search</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="creacct">Create Account</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="twofact">Setup Two Factor Authorization Page</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="login">Login Page</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="portal">User Portal</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h5 id="agent">Agent</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h5 id="man">Manufacturer</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
+              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
+              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
+              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
+              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
+              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
+              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
+              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
+              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
+              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
+              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
+              justo.
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <h4 id="forms">Forms</h4>
+        <p>
+
+        </p>
+
+        <h5 id="submit">Submitting</h5>
+        <p>
+
+        </p>
+
+        <h5 id="approve">Approving</h5>
+        <p>
+
+        </p>
+
+        <h4 id="help">Help Pages</h4>
+        <p>
+
+        </p>
+
+        <h4 id="about">About Page</h4>
+        <p>
+
+        </p>
+
+        <h4 id="other">Other</h4>
+        <p>
+
+        </p>
+
+        <h5 id="gamif">Gamification</h4>
+          <p>
+
+          </p>
+
+          <h5 id="vasst">Voice Assistant</h4>
+            <p>
+
+            </p>
+
+            <h5 id="email">Email Notifications</h4>
+              <p>
+
+              </p>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 
