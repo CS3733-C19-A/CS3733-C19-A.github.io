@@ -136,6 +136,7 @@
             <a class="list-group-item list-group-item-action" href="#creacct">Create Account</a>
             <a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a>
             <a class="list-group-item list-group-item-action" href="#login">Login Page</a>
+            <a class="list-group-item list-group-item-action" href="#resetPass">Reset Password</a>
             <a class="list-group-item list-group-item-action" href="#portal">User Portal</a>
             <ul>
               <a class="list-group-item list-group-item-action" href="#agent">Agent</a>
@@ -276,19 +277,23 @@
           <div class="col-8">
             <h4 id="creacct">Create Account</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              The create account page serves as the page where individual manufacturers or agents can come to create new accounts, if they do not already have one.
+
+              <ul>
+                <li>The Agent and Manufacturer radio buttons allow an individual to choose what kind of account they are making, depending on who they are</li>
+                <li>The following fields are necessary to be filled out for each account creation</li>
+                <ul>
+                  <li>Username</li>
+                  <li>Password</li>
+                  <li>Confirm Password</li>
+                  <li>First Name</li>
+                  <li>Last Name</li>
+                  <li>Email</li>
+                  <li>Phone</li>
+                </ul>
+                <li>If the individual who is creating the account is an agent they must select their specialty with the specialty drop down</li>
+                <li>The two factor toggle switch toggles on or off the two factor log in security feature</li>
+              </ul>
 
             </p>
           </div>
@@ -303,19 +308,7 @@
           <div class="col-8">
             <h4 id="twofact">Setup Two Factor Authorization Page</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              Two factor authentication utilizes Google Authenticator to initiate the two factor security feature. By scanning the QR Code and your account will be linked to your phone, the user is able to enter a code that Google Authenticator produces in order to completely login to the users account.
             </p>
           </div>
           <div class="col-4">
@@ -329,19 +322,37 @@
           <div class="col-8">
             <h4 id="login">Login Page</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              The login page prompts the user to input their username and password and has three buttons:
+
+              <ul>
+                <li>Login</li>
+                <ul>
+                  <li>If the users login credentials are correct then the user is logged in and taken to the User Portal</li>
+                  <li> If the users account has two factor login then the two factor login page is prompted before they are able to log in to the user portal.</li>
+                </ul>
+                <li>No Account? Create one</li>
+                <ul>
+                  <li>If the user does not have an account they are taken to the account creation page</li>
+                </ul>
+                <li>Reset Password</li>
+                <ul>
+                  <li>If the user has forgotten their password then they are taken to the reset password pop up screen</li>
+                </ul>
+              </ul>
+            </p>
+          </div>
+          <div class="col-4">
+            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-8">
+            <h4 id="resetPass">Reset password</h4>
+            <p>
+              In this window the user is prompted to enter their username, once their username is entered they then press the Send Email button, which sends a recovery email to the Users email if the email exists. The user can then enter the verification code as well as a new password and clicke the reset button in order to reset their password.
             </p>
           </div>
           <div class="col-4">
@@ -355,19 +366,7 @@
           <div class="col-8">
             <h4 id="portal">User Portal</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              The User Portal serves as the main platform from which Agents and Manufacturers will be able to interact with the TTB Applications
             </p>
           </div>
           <div class="col-4">
@@ -381,19 +380,12 @@
           <div class="col-8">
             <h5 id="agent">Agent</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              <ul>
+                  <li>The left column displays the User information, for the Agent this includes the agents specialty, and the amount of applications that are currently unassigned</li>
+                  <li>The main table displays the number of applications that are currently assigned to the agent. Clicking any of the view buttons will take the Agent to the respective form approval page for the specific form</li>
+                  <li>The retrieve more button allows an Agent to retrieve more forms to their inbox for them to work on</li>
+                  <li>The update account button takes the Agent to the account settings page</li>
+              </ul>
             </p>
           </div>
           <div class="col-4">
@@ -407,19 +399,10 @@
           <div class="col-8">
             <h5 id="man">Manufacturer</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus cursus, maximus massa vel, sagittis odio. In a augue
-              venenatis, lobortis tortor quis, sagittis mauris. Proin ultricies nisi non interdum cursus. Curabitur dapibus
-              gravida scelerisque. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nullam semper nunc et rutrum condimentum. Vivamus suscipit nibh eu turpis feugiat ornare.
-              Mauris rhoncus, felis id commodo semper, augue massa porta tellus, ac laoreet mi metus ut elit. Vestibulum
-              iaculis ultrices sem, in facilisis felis malesuada sed. Morbi eu diam dui. Nulla vitae iaculis nibh, eget posuere
-              ex. Aliquam erat volutpat. Nunc rutrum lorem in felis tincidunt dapibus. Maecenas fringilla euismod arcu, et
-              mattis massa rhoncus id. Aliquam id est fermentum metus semper aliquam non eget neque. Integer varius aliquet
-              placerat. Duis semper cursus neque sit amet posuere. Quisque quis lorem eu ante efficitur viverra. Fusce turpis
-              sapien, ultricies ut dolor semper, pellentesque scelerisque neque. Mauris pretium volutpat enim in mollis.
-              Nulla rhoncus volutpat neque, sed interdum lectus tempor eget. Duis ac nisl ut metus ultrices faucibus faucibus
-              a tellus. Vestibulum laoreet, ante nec varius euismod, orci dolor suscipit arcu, ut sodales sapien tortor ac
-              justo.
+              <li>The manufacturer user portal has a column on the left that displays the basic account information </li>
+              <li>The main window has a table that displays all the applications that have been submitted by the manufacturer. Clicking any of the view buttons will take the manufacturer to the view the submitted form</li>
+              <li>The create new application button allows the manufacturer to create a new application to be submitted, the type of view that the submission page is set to can be toggled between multi page, or single page scrolling view through the “Fill in Multi-Page” toggle switch</li>
+              <li>The update account button take the Manufacturer to the account settings page</li>
             </p>
           </div>
           <div class="col-4">
