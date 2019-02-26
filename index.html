@@ -10,6 +10,10 @@
 
 @import url("../../../../Downloads/bootstrap-material-design-dist/css/bootstrap-material-design.css");
 
+body{
+  position:relative;
+}
+
 h4 {
 	font-size: 22px;
 }
@@ -101,7 +105,7 @@ h5 {
 
 </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".col-4" data-offset="10">
           <div class="row">
             <div class="col-4">
               <nav class="navbar">
@@ -138,7 +142,7 @@ h5 {
               </nav>
             </div>
             <div class="col-8">     
-              <div id="test3" data-spy="scroll" data-target=".list-group" data-offset="0" class="scrollspy-example">
+              <div>
               
                 <h4 id="oview">Overview</h4>
                 <p>
@@ -147,13 +151,12 @@ h5 {
                 
                 <h4 id="home">Home Page</h4>
                 <p>
-              
+
                 </p>
                 
                 <h4 id="nbar">Navigation Bar</h4>
                 <p>
         
-                
                 </p>
                 
                 <h4 id="cola">COLA Search</h4>
