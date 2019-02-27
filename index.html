@@ -14,9 +14,35 @@
     body {
       position: relative;
     }
-    a {
+    
+    .easteregg {
       color: #f8f8f8;
     }
+    
+    /* unvisited link */
+    .apic:link {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    /* visited link */
+    .apic:visited {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    /* mouse over link */
+    .apic:hover {
+      color: #046b99;
+      text-decoration: none;
+    }
+
+    /* selected link */
+    .apic:active {
+      color: #112e51;
+      text-decoration: none;
+    }
+
     h4 {
       font-size: 22px;
     }
@@ -131,32 +157,32 @@
         <div id="list-example" class="list-group">
           <h2 style="text-align: center"> User Directory </h2>
           <ul>
-            <a class="list-group-item list-group-item-action" href="#oview">Overview</a>
-            <a class="list-group-item list-group-item-action" href="#home">Home Page</a>
-            <a class="list-group-item list-group-item-action" href="#nbar">Navigation Bar</a>
-            <a class="list-group-item list-group-item-action" href="#cola">COLA Search</a>
-            <a class="list-group-item list-group-item-action" href="#creacct">Create Account</a>
-            <a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a>
-            <a class="list-group-item list-group-item-action" href="#login">Login Page</a>
-            <a class="list-group-item list-group-item-action" href="#resetPass">Reset Password</a>
-            <a class="list-group-item list-group-item-action" href="#portal">User Portal</a>
+            <li><a class="list-group-item list-group-item-action" href="#oview">Overview</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#home">Home Page</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#nbar">Navigation Bar</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#cola">COLA Search</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#creacct">Create Account</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#login">Login Page</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#resetPass">Reset Password</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#portal">User Portal</a></li>
             <ul>
-              <a class="list-group-item list-group-item-action" href="#agent">Agent</a>
-              <a class="list-group-item list-group-item-action" href="#man">Manufacturer</a>
+              <li><a class="list-group-item list-group-item-action" href="#agent">Agent</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#man">Manufacturer</a></li>
             </ul>
-            <a class="list-group-item list-group-item-action" href="#accStt">Account Settings</a>
-            <a class="list-group-item list-group-item-action" href="#forms">Forms</a>
+            <li><a class="list-group-item list-group-item-action" href="#accStt">Account Settings</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#forms">Forms</a></li>
             <ul>
-              <a class="list-group-item list-group-item-action" href="#submit">Submitting</a>
-              <a class="list-group-item list-group-item-action" href="#approve">Approving</a>
+              <li><a class="list-group-item list-group-item-action" href="#submit">Submitting</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#approve">Approving</a></li>
             </ul>
-            <a class="list-group-item list-group-item-action" href="#help">Help Pages</a>
-            <a class="list-group-item list-group-item-action" href="#about">About Page</a>
-            <a class="list-group-item list-group-item-action" href="#other">Other</a>
+            <li><a class="list-group-item list-group-item-action" href="#help">Help Pages</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#about">About Page</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#other">Other</a></li>
             <ul>
-              <a class="list-group-item list-group-item-action" href="#gamif">Gamification</a>
-              <a class="list-group-item list-group-item-action" href="#vasst">Voice Assistant</a>
-              <a class="list-group-item list-group-item-action" href="#email">Email Notifications</a>
+              <li><a class="list-group-item list-group-item-action" href="#gamif">Gamification</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#vasst">Voice Assistant</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#email">Email Notifications</a></li>
             </ul>
           </ul>
         </div>
@@ -169,16 +195,15 @@
         <h5 style="margin-top: -5px; color: #6b6868">Max Westwater, Jonathan Dang, Shuxing Li, Christopher Bell, Jonathan Tai, James Witt, Dillon Arnold, Junyu Lyu, Alex Rus, Zhihao Xie</h5>
         <h4 id="oview" style="margin-top: 88px;">Overview</h4>
         <p>
-          The TTB COLA search application was designed so that manufacturers and agents can better submit and approve alcohol manufacturing forms. This way, not only will productivity of agents be increased but the manufacturers will also be able to easily submit applications for their new projects. The search function has also been improved so that it is much easier to find the information you are looking for, if you are researching or looking up TTB Application forms
+          The TTB COLA search application was designed so that manufacturers and agents can better submit and approve alcohol label applications. This way, not only will the productivity of agents be increased but the manufacturers will also be able to easily submit applications for their new projects. The search function has also been improved so that it is much easier to research or look up approved TTB applications.
         </p>
           <hr>
 
         <div class="row">
           <div class="col-8">
-            <h4 id="home">Home Page</h4>
+            <h4 id="home"><a class="apic" href="test.png" target="_blank">Home Page</a></h4>
             <p>
-              The Home page contains two majors elements, and serves as the portal from which users will initially interact with the TTB COLA search application
-
+              The Home Page contains two majors elements, and serves as the launching point from which users will initially interact with the TTB COLA search application.
               <ul>
                 <li>COLA Search</li>
                 <ul>
@@ -201,7 +226,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -209,11 +234,11 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="nbar">Navigation Bar</h4>
+            <h4 id="nbar"><a class="apic" href="test.png" target="_blank">Navigation Bar</a></h4>
             <p>
-              The Navigation bar is the main way to get around the website. By clicking on the logo you are able to be taken back to the Home Page. When a user is not logged in, the two buttons at the top of the bar are seen to be Login and Signup which take you to the Login and Create Account pages respectively
-
-              When the a user has logged in then the buttons change to :
+              The Navigation Bar is the main way to get around the website. By clicking on the logo you are able to be taken back to the Home Page. When a user is not logged in, the two buttons at the top of the bar are Login and Sign up which take you to the Login and Create Account pages respectively. 
+              
+              When the user has logged in, then the buttons change to :
 
               <ul>
                 <li>COLA Search</li>
@@ -230,14 +255,12 @@
                 </ul>
               </ul>
 
-              If the user is an Agent they will see an extra button: 
-              <ul>
-                <li> This button takes users to the User statistics page </li>
-              </ul>
+              If the user is an Agent they will see an extra button, User Statistics, which take the user to the User Statistics page. 
+              
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -245,7 +268,7 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="cola">COLA Search</h4>
+            <h4 id="cola"><a class="apic" href="test.png" target="_blank">COLA Search</a></h4>
             <p>
               The search function is the primary method for user to interact with the TBB Database. Through the COLA Search page, users are able to search for alcohol and view their application information
 
@@ -270,7 +293,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -278,7 +301,7 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="creacct">Create Account</h4>
+            <h4 id="creacct"><a class="apic" href="test.png" target="_blank">Create Account</a></h4>
             <p>
               The create account page serves as the page where individual manufacturers or agents can come to create new accounts, if they do not already have one.
 
@@ -301,7 +324,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -309,13 +332,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="twofact">Setup Two Factor Authorization Page</h4>
+            <h4 id="twofact"><a class="apic" href="test.png" target="_blank">Setup Two Factor Authorization Page</a></h4>
             <p>
               Two factor authentication utilizes Google Authenticator to initiate the two factor security feature. By scanning the QR Code and your account will be linked to your phone, the user is able to enter a code that Google Authenticator produces in order to completely login to the users account.
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -323,7 +346,7 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="login">Login Page</h4>
+            <h4 id="login"><a class="apic" href="test.png" target="_blank">Login Page</a></h4>
             <p>
               The login page prompts the user to input their username and password and has three buttons:
 
@@ -345,7 +368,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -353,13 +376,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="resetPass">Reset password</h4>
+            <h4 id="resetPass"><a class="apic" href="test.png" target="_blank">Reset password</a></h4>
             <p>
               In this window the user is prompted to enter their username, once their username is entered they then press the Send Email button, which sends a recovery email to the Users email if the email exists. The user can then enter the verification code as well as a new password and clicke the reset button in order to reset their password.
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -367,13 +390,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="portal">User Portal</h4>
+            <h4 id="portal"><a class="apic" href="test.png" target="_blank">User Portal</a></h4>
             <p>
               The User Portal serves as the main platform from which Agents and Manufacturers will be able to interact with the TTB Applications
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -381,7 +404,7 @@
 
         <div class="row">
           <div class="col-8">
-            <h5 id="agent">Agent</h5>
+            <h5 id="agent"><a class="apic" href="test.png" target="_blank">Agent</a></h5>
             <p>
               <ul>
                   <li>The left column displays the User information, for the Agent this includes the agents specialty, and the amount of applications that are currently unassigned</li>
@@ -392,7 +415,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -400,7 +423,7 @@
 
         <div class="row">
           <div class="col-8">
-            <h5 id="man">Manufacturer</h5>
+            <h5 id="man"><a class="apic" href="test.png" target="_blank">Manufacturer</a></h5>
             <p>
               <ul>
               <li>The manufacturer user portal has a column on the left that displays the basic account information </li>
@@ -411,7 +434,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -419,7 +442,7 @@
 
         <div class="row">
           <div class="col-8">
-        <h4 id="accStt">Account Settings</h4>
+        <h4 id="accStt"><a class="apic" href="test.png" target="_blank">Account Settings</a></h4>
         <p>
           Account settings page allows the user to change their account settings. Specifically items that can be changed are:
           <ul>
@@ -431,7 +454,7 @@
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -439,20 +462,20 @@
 
         <div class="row">
           <div class="col-8">
-        <h4 id="forms">Forms</h4>
+        <h4 id="forms"><a class="apic" href="test.png" target="_blank">Forms</a></h4>
         <p>
           TTB Application forms are used to approve and keep a registry of all alcoholic beverages ever sold and manufactured in the United States of America
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         
         <div class="row">
           <div class="col-8">
-        <h5 id="submit">Submitting</h5>
+        <h5 id="submit"><a class="apic" href="test.png" target="_blank">Submitting</a></h5>
         <p>
           <ul> 
             <li>The form submission for manufacturers is a digital replication of the physical form that manufacturers have to submit to TTB for new alcoholic products.</li>
@@ -461,7 +484,7 @@
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -469,7 +492,7 @@
         
         <div class="row">
           <div class="col-8">
-        <h5 id="approve">Approving</h5>
+        <h5 id="approve"><a class="apic" href="test.png" target="_blank">Approving</a></h5>
         <p>
           <ul>
             <li>An Agent can access the form approval page in order to approve, reject, or forward applications</li>
@@ -480,20 +503,20 @@
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="help">Help Pages</h4>
+        <h4 id="help"><a class="apic" href="test.png" target="_blank">Help Pages</a></h4>
         <p>
           The help buttons are buttons that appear near fillable text fields. In order to use the button you need to click or hover over the help button in order to show the pup up window that displays the detailed help information
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
@@ -501,33 +524,33 @@
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="about">About Page</h4>
+        <h4 id="about"><a class="apic" href="test.png" target="_blank">About Page</a></h4>
         <p>
           The about page displays helpful about information regarding the software development team for this project
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="other">Other</h4>
+        <h4 id="other"><a class="apic" href="test.png" target="_blank">Other</a></h4>
         <p>
           Other special features that are added into the app by Team A
         </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         
         <div class="row">
           <div class="col-8">
-        <h4 id="gamif">Gamification<a href="https://alligrater.github.io/FlappyBinbin/index.html">Surprise!</a></h4> 
+        <h4 id="gamif"><a class="apic" href="test.png" target="_blank">Gamification</a><a class="easteregg" href="https://alligrater.github.io/FlappyBinbin/index.html" target="_blank">Surprise!</a></h4> 
           <p>
             <ul>
               <li>Using a badge reward system to encourage higher productivity amongst agents. By completing more applications, the agents receive points which go to a a point total which can be used to motivate the Agent</li>
@@ -536,14 +559,14 @@
           </p>
         </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         
         <div class="row">
           <div class="col-8">
-        <h4 id="vasst">Voice Assistant</h4>
+        <h4 id="vasst"><a class="apic" href="test.png" target="_blank">Voice Assistant</a></h4>
             <p>
               <ul>
                 <li>We have added Google Voice Assistant functionality, this allows the application to be accessible to those with visual impairments</li>
@@ -551,14 +574,14 @@
             </p>
           </div>
         <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
         
         <div class="row">
           <div class="col-8">
-        <h4 id="email">Email Notifications</h4>
+        <h4 id="email"><a class="apic" href="test.png" target="_blank">Email Notifications</a></h4>
             <p>
               <ul>
                 <li>If a password reset has been requested or an application form has been rejected or accepted, an email notification will be sent to the email that is tied to the current account</li>
@@ -566,7 +589,7 @@
             </p>
           </div>
           <div class="col-4">
-            <h3 style="text-align: center">TODO: Insert Image(s) Here</h3>
+            
           </div>
         </div>
 
