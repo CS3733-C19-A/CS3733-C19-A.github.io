@@ -43,6 +43,30 @@
       text-decoration: none;
     }
 
+    /* unvisited link */
+    .asub:link {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    /* visited link */
+    .asub:visited {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    /* mouse over link */
+    .asub:hover {
+      color: #046b99;
+      text-decoration: none;
+    }
+
+    /* selected link */
+    .asub:active {
+      color: #112e51;
+      text-decoration: underline;
+    }
+
     h4 {
       font-size: 22px;
     }
@@ -162,7 +186,7 @@
             <li><a class="list-group-item list-group-item-action" href="#nbar">Navigation Bar</a></li>
             <li><a class="list-group-item list-group-item-action" href="#cola">COLA Search</a></li>
             <li><a class="list-group-item list-group-item-action" href="#creacct">Create Account</a></li>
-            <li><a class="list-group-item list-group-item-action" href="#twofact">Setup Two Factor Authorization Page</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#twofact">Setup Two-Factor Authentication Page</a></li>
             <li><a class="list-group-item list-group-item-action" href="#login">Login Page</a></li>
             <li><a class="list-group-item list-group-item-action" href="#resetPass">Reset Password</a></li>
             <li><a class="list-group-item list-group-item-action" href="#portal">User Portal</a></li>
@@ -197,11 +221,14 @@
         <p>
           The TTB COLA search application was designed so that manufacturers and agents can better submit and approve alcohol label applications. This way, not only will the productivity of agents be increased but the manufacturers will also be able to easily submit applications for their new projects. The search function has also been improved so that it is much easier to research or look up approved TTB applications.
         </p>
+        <p>
+          Click on the section headers to see a view of the section within the application.
+        </p>
           <hr>
 
         <div class="row">
           <div class="col-8">
-            <h4 id="home"><a class="apic" href="test.png" target="_blank">Home Page</a></h4>
+            <h4 id="home"><a class="apic" href="home.png" target="_blank">Home Page</a></h4>
             <p>
               The Home Page contains two majors elements, and serves as the launching point from which users will initially interact with the TTB COLA search application.
               <ul>
@@ -234,9 +261,9 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="nbar"><a class="apic" href="test.png" target="_blank">Navigation Bar</a></h4>
+            <h4 id="nbar"><a class="apic" href="navbar.png" target="_blank">Navigation Bar</a></h4>
             <p>
-              The Navigation Bar is the main way to get around the website. By clicking on the logo you are able to be taken back to the Home Page. When a user is not logged in, the two buttons at the top of the bar are Login and Sign up which take you to the Login and Create Account pages respectively. 
+              The Navigation Bar is the main way to get around the website. By clicking on the logo, you are taken back to the Home Page. When a user is not logged in, the two buttons at the top of the bar are Login and Sign Up which take you to the Login and Create Account pages respectively. 
               
               When the user has logged in, then the buttons change to :
 
@@ -255,7 +282,7 @@
                 </ul>
               </ul>
 
-              If the user is an Agent they will see an extra button, User Statistics, which take the user to the User Statistics page. 
+              If the user is an Agent they will see an extra button, User Statistics, which takes the user to the User Statistics Page. 
               
             </p>
           </div>
@@ -268,16 +295,16 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="cola"><a class="apic" href="test.png" target="_blank">COLA Search</a></h4>
+            <h4 id="cola"><a class="apic" href="cola.png" target="_blank">COLA Search</a></h4>
             <p>
-              The search function is the primary method for user to interact with the TBB Database. Through the COLA Search page, users are able to search for alcohol and view their application information
+              The search function is the primary method for a user to interact with the TBB Database. Through the COLA Search Page, users are able to search for alcohol and view their application information.
 
               <ul>
                 <li>Search Bar</li>
                 <ul>
-                  <li>The search bar allows you to type in keywords for alcohol that you might be looking for. It is able to suggest results that you might be looking for and pressing the Search button will initiate the search.  </li>
-                  <li> Next to the search button you are able to choose the type of algorithm you would like to search with, depending on the kinds of results you are looking for </li>
-                  <li>The right half of the search bar allows you to download the items that you have searched for in a CSV file format with a chosen Delimiter. You can choose where on your computer you want to save your file to by clicking on the folder icon, and the specific Delimiter in the Delimiter field. Once you are ready, clicking Download results should download the CSV file. </li>
+                  <li>The search bar allows you to type in keywords for alcohol that you might be looking for. It is able to suggest results that you might be looking for. Pressing the Search button will initiate the search.  </li>
+                  <li>Next to the search button you are able to choose the type of algorithm you would like to search with, depending on the kinds of results you are looking for </li>
+                  <li>The right half of the search bar allows you to download the search results in a CSV file format with a chosen Delimiter. You can choose where on your computer you want to save your file to by clicking on the folder icon. You can also specify the desired Delimiter for separating the fields in the CSV by entering it into the Delimiter field. Once you are ready, clicking the Download Results button, downloads the CSV file. </li>
                 </ul>
                 <li>Filters</li>
                 <ul>
@@ -285,7 +312,7 @@
                 </ul>
                 <li>Search Results</li>
                 <ul> 
-                  <li> Search results are displayed in the center of the page and are displayed in infinite scrolling method where more results are loaded as you scroll towards the bottom of the page </li>
+                  <li> Search results are displayed in the center of the page and are displayed in an infinite scrolling method where more results are loaded as you scroll towards the bottom of the page </li>
                   <li> Clicking on a search result creates an application pop up window which shows all the information of the selected alcohol and its application</li>
                 </ul>
               </ul>
@@ -301,13 +328,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="creacct"><a class="apic" href="test.png" target="_blank">Create Account</a></h4>
+            <h4 id="creacct"><a class="apic" href="acctcreate.png" target="_blank">Create Account</a></h4>
             <p>
-              The create account page serves as the page where individual manufacturers or agents can come to create new accounts, if they do not already have one.
+              The Create Account Page serves as the page where individual manufacturers or agents can come to create new accounts, if they do not already have one.
 
               <ul>
                 <li>The Agent and Manufacturer radio buttons allow an individual to choose what kind of account they are making, depending on who they are</li>
-                <li>The following fields are necessary to be filled out for each account creation</li>
+                <li>The following fields are necessary to be filled out for each account creation:</li>
                 <ul>
                   <li>Username</li>
                   <li>Password</li>
@@ -315,10 +342,10 @@
                   <li>First Name</li>
                   <li>Last Name</li>
                   <li>Email</li>
-                  <li>Phone</li>
+                  <li>Phone Number</li>
                 </ul>
-                <li>If the individual who is creating the account is an agent they must select their specialty with the specialty drop down</li>
-                <li>The two factor toggle switch toggles on or off the two factor log in security feature</li>
+                <li>If the individual who is creating the account is an agent, they must select their specialty from the specialty dropdown</li>
+                <li>The two factor toggle switch toggles on or off the two-factor login security feature</li>
               </ul>
 
             </p>
@@ -332,9 +359,9 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="twofact"><a class="apic" href="test.png" target="_blank">Setup Two Factor Authorization Page</a></h4>
+            <h4 id="twofact"><a class="apic" href="twofact.png" target="_blank">Setup Two-Factor Authentication Page</a></h4>
             <p>
-              Two factor authentication utilizes Google Authenticator to initiate the two factor security feature. By scanning the QR Code and your account will be linked to your phone, the user is able to enter a code that Google Authenticator produces in order to completely login to the users account.
+              Two-factor authentication utilizes Google Authenticator to initiate the two-factor security feature. By scanning the QR Code, your account will be linked to your phone. The user is able to enter a code that Google Authenticator produces in order to securely login to their account.
             </p>
           </div>
           <div class="col-4">
@@ -346,23 +373,23 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="login"><a class="apic" href="test.png" target="_blank">Login Page</a></h4>
+            <h4 id="login"><a class="apic" href="login.png" target="_blank">Login Page</a></h4>
             <p>
               The login page prompts the user to input their username and password and has three buttons:
 
               <ul>
                 <li>Login</li>
                 <ul>
-                  <li>If the users login credentials are correct then the user is logged in and taken to the User Portal</li>
-                  <li> If the users account has two factor login then the two factor login page is prompted before they are able to log in to the user portal.</li>
+                  <li>If the user's login credentials are correct, the user is logged in and taken to the User Portal</li>
+                  <li>If the user's account has two-factor login enabled, the two-factor login page is prompted before they are able to log in to the User Portal.</li>
                 </ul>
                 <li>No Account? Create one</li>
                 <ul>
-                  <li>If the user does not have an account they are taken to the account creation page</li>
+                  <li>If the user does not have an account, they are taken to the Account Creation Page</li>
                 </ul>
                 <li>Reset Password</li>
                 <ul>
-                  <li>If the user has forgotten their password then they are taken to the reset password pop up screen</li>
+                  <li>If the user has forgotten their password, they are taken to the Reset Password pop-up screen</li>
                 </ul>
               </ul>
             </p>
@@ -376,9 +403,9 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="resetPass"><a class="apic" href="test.png" target="_blank">Reset password</a></h4>
+            <h4 id="resetPass"><a class="apic" href="forgotpass.png" target="_blank">Reset password</a></h4>
             <p>
-              In this window the user is prompted to enter their username, once their username is entered they then press the Send Email button, which sends a recovery email to the Users email if the email exists. The user can then enter the verification code as well as a new password and clicke the reset button in order to reset their password.
+              In this window, the user is prompted to enter their username. Once their username is entered, they press the Send Email button which sends recovery instructions to the user's email if the email exists. The user can then enter the verification code, as well as a new password, and click the reset button to reset their password.
             </p>
           </div>
           <div class="col-4">
@@ -390,9 +417,9 @@
 
         <div class="row">
           <div class="col-8">
-            <h4 id="portal"><a class="apic" href="test.png" target="_blank">User Portal</a></h4>
+            <h4 id="portal">User Portal</h4>
             <p>
-              The User Portal serves as the main platform from which Agents and Manufacturers will be able to interact with the TTB Applications
+              The User Portal serves as the main platform from which Agents and Manufacturers will be able to interact with the TTB Applications.
             </p>
           </div>
           <div class="col-4">
@@ -404,13 +431,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h5 id="agent"><a class="apic" href="test.png" target="_blank">Agent</a></h5>
+            <h5 id="agent"><a class="apic" href="agentuserportal.png" target="_blank">Agent</a></h5>
             <p>
               <ul>
-                  <li>The left column displays the User information, for the Agent this includes the agents specialty, and the amount of applications that are currently unassigned</li>
-                  <li>The main table displays the number of applications that are currently assigned to the agent. Clicking any of the view buttons will take the Agent to the respective form approval page for the specific form</li>
-                  <li>The retrieve more button allows an Agent to retrieve more forms to their inbox for them to work on</li>
-                  <li>The update account button takes the Agent to the account settings page</li>
+                  <li>The left column displays the user information. For the Agent, this includes the agents specialty and the amount of applications that are currently unassigned</li>
+                  <li>The main table displays the number of applications that are currently assigned to the agent. Clicking on any of the view buttons will take the Agent to the respective form approval page for the specific form</li>
+                  <li>The Retrieve More button allows an Agent to populate their inbox with more forms review</li>
+                  <li>The Update Account button takes the Agent to the Account Settings Page</li>
               </ul>
             </p>
           </div>
@@ -423,13 +450,13 @@
 
         <div class="row">
           <div class="col-8">
-            <h5 id="man"><a class="apic" href="test.png" target="_blank">Manufacturer</a></h5>
+            <h5 id="man"><a class="apic" href="manuserportal.png" target="_blank">Manufacturer</a></h5>
             <p>
               <ul>
-              <li>The manufacturer user portal has a column on the left that displays the basic account information </li>
-              <li>The main window has a table that displays all the applications that have been submitted by the manufacturer. Clicking any of the view buttons will take the manufacturer to the view the submitted form</li>
-              <li>The create new application button allows the manufacturer to create a new application to be submitted, the type of view that the submission page is set to can be toggled between multi page, or single page scrolling view through the “Fill in Multi-Page” toggle switch</li>
-              <li>The update account button take the Manufacturer to the account settings page</li>
+              <li>The Manufacturer User Portal has a column on the left that displays the basic account information </li>
+              <li>The main window has a table that displays all of the applications that have been submitted by the Manufacturer. Clicking any of the view buttons will allow the Manufacturer to view the submitted form</li>
+              <li>The Create New Application button allows the Manufacturer to create a new application to be submitted. The type of view that the submission page is set to can be toggled between Multi-Page or Single-Page scrolling through the Fill in Multi-Page toggle switch</li>
+              <li>The Update Account button takes the Manufacturer to the Account Settings Page</li>
             </ul>
             </p>
           </div>
@@ -442,9 +469,9 @@
 
         <div class="row">
           <div class="col-8">
-        <h4 id="accStt"><a class="apic" href="test.png" target="_blank">Account Settings</a></h4>
+        <h4 id="accStt"><a class="apic" href="acctsettings.png" target="_blank">Account Settings</a></h4>
         <p>
-          Account settings page allows the user to change their account settings. Specifically items that can be changed are:
+          The Account Settings Page allows the user to change details about their account. Items that can be changed are as follows:
           <ul>
             <li>Password</li>
             <li>Phone Number</li>
@@ -462,9 +489,9 @@
 
         <div class="row">
           <div class="col-8">
-        <h4 id="forms"><a class="apic" href="test.png" target="_blank">Forms</a></h4>
+        <h4 id="forms">Forms</h4>
         <p>
-          TTB Application forms are used to approve and keep a registry of all alcoholic beverages ever sold and manufactured in the United States of America
+          TTB Application forms are used to approve and keep a registry of all alcoholic beverages ever sold and manufactured in the United States of America.
         </p>
         </div>
         <div class="col-4">
@@ -475,11 +502,11 @@
         
         <div class="row">
           <div class="col-8">
-        <h5 id="submit"><a class="apic" href="test.png" target="_blank">Submitting</a></h5>
+        <h5 id="submit"><a class="apic" href="singlepagesubmission.png" target="_blank">Submitting</a></h5>
         <p>
           <ul> 
             <li>The form submission for manufacturers is a digital replication of the physical form that manufacturers have to submit to TTB for new alcoholic products.</li>
-            <li>The form can appear in two forms, either multi page or single page, depending on the manufacturers selected preferences</li>
+            <li>The form can appear in two forms, either <a class="asub" href="multipage.png" target="_blank">multi-page</a> or <a class="asub" href="singlepagesubmission.png" target="_blank">single-page</a>, depending on the Manufacturer's selected preferences</li>
           </ul>
         </p>
         </div>
@@ -492,11 +519,11 @@
         
         <div class="row">
           <div class="col-8">
-        <h5 id="approve"><a class="apic" href="test.png" target="_blank">Approving</a></h5>
+        <h5 id="approve"><a class="apic" href="approval.png" target="_blank">Approving</a></h5>
         <p>
           <ul>
-            <li>An Agent can access the form approval page in order to approve, reject, or forward applications</li>
-            <li>Approving an application automatically sends it back to the manufacturer with the approval status</li>
+            <li>An Agent can access the Form Approval Page in order to approve, reject, or forward applications</li>
+            <li>Approving an application automatically sends it back to the Manufacturer with the approval status</li>
             <li>Rejecting the application allows the Agent to send the application back to the Manufacturer with feedback</li>
             <li>Forwarding allows the Agent to forward the current application to a different Agent’s inbox</li>
           </ul>
@@ -510,9 +537,9 @@
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="help"><a class="apic" href="test.png" target="_blank">Help Pages</a></h4>
+        <h4 id="help"><a class="apic" href="help.png" target="_blank">Help Pages</a></h4>
         <p>
-          The help buttons are buttons that appear near fillable text fields. In order to use the button you need to click or hover over the help button in order to show the pup up window that displays the detailed help information
+          The help buttons are buttons that appear near fillable text fields. In order to use the button you need to click or hover over the help button in order to show the pop-up window that displays the detailed help information.
         </p>
         </div>
         <div class="col-4">
@@ -524,9 +551,9 @@
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="about"><a class="apic" href="test.png" target="_blank">About Page</a></h4>
+        <h4 id="about"><a class="apic" href="about.png" target="_blank">About Page</a></h4>
         <p>
-          The about page displays helpful about information regarding the software development team for this project
+          The about page displays information about the software development team responsible for this project.
         </p>
         </div>
         <div class="col-4">
@@ -537,9 +564,9 @@
         <hr>
         <div class="row">
           <div class="col-8">
-        <h4 id="other"><a class="apic" href="test.png" target="_blank">Other</a></h4>
+        <h4 id="other">Other</h4>
         <p>
-          Other special features that are added into the app by Team A
+          Other special features that are added into the application by Team A are as follows:
         </p>
         </div>
         <div class="col-4">
@@ -550,10 +577,10 @@
         
         <div class="row">
           <div class="col-8">
-        <h4 id="gamif"><a class="apic" href="test.png" target="_blank">Gamification</a><a class="easteregg" href="https://alligrater.github.io/FlappyBinbin/index.html" target="_blank">Surprise!</a></h4> 
+        <h4 id="gamif"><a class="apic" href="gamify.png" target="_blank">Gamification</a><a class="easteregg" href="https://alligrater.github.io/FlappyBinbin/index.html" target="_blank">Surprise!</a></h4> 
           <p>
             <ul>
-              <li>Using a badge reward system to encourage higher productivity amongst agents. By completing more applications, the agents receive points which go to a a point total which can be used to motivate the Agent</li>
+              <li>A badge reward system is used to encourage higher productivity amongst agents. By completing more applications, the agents receive points which go to a point total which can be used to motivate the Agent</li>
               <li>User Statistics is a page that only shows up for an Agent. It allows the Agent to see what kind of badges they have earned as well as the amount of points that they have</li>
             </ul>
           </p>
@@ -566,10 +593,10 @@
         
         <div class="row">
           <div class="col-8">
-        <h4 id="vasst"><a class="apic" href="test.png" target="_blank">Voice Assistant</a></h4>
+        <h4 id="vasst">Voice Assistant</h4>
             <p>
               <ul>
-                <li>We have added Google Voice Assistant functionality, this allows the application to be accessible to those with visual impairments</li>
+                <li>We have added Google Voice Assistant functionality, this allows the application to be accessible to those with visual impairments through voice commands</li>
               </ul>
             </p>
           </div>
@@ -581,14 +608,28 @@
         
         <div class="row">
           <div class="col-8">
-        <h4 id="email"><a class="apic" href="test.png" target="_blank">Email Notifications</a></h4>
+        <h4 id="email"><a class="apic" href="emailnotify.png" target="_blank">Email Notifications</a></h4>
             <p>
               <ul>
-                <li>If a password reset has been requested or an application form has been rejected or accepted, an email notification will be sent to the email that is tied to the current account</li>
+                <li>If a password reset has been requested, or an application form has been rejected or accepted, an email notification will be sent to the email that is linked to the current account</li>
               </ul>
             </p>
           </div>
           <div class="col-4">
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+        <h4 id="vasst"><a class="apic" href="ocr.png" target="_blank">OCR Image Search</a></h4>
+            <p>
+              <ul>
+                <li>A search feature has been implemented that is driven by uploading an image. The feature interprets the image and populates a text field for searching the database based on what it thinks the label name is. </li>
+              </ul>
+            </p>
+          </div>
+        <div class="col-4">
             
           </div>
         </div>
